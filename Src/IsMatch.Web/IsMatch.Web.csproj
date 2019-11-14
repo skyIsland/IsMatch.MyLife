@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>true</CopyRefAssembliesToPublishDirectory>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  
+    <CopyRefAssembliesToPublishDirectory>true</CopyRefAssembliesToPublishDirectory>
+</PropertyGroup>
+
+
+
+
+  <ItemGroup>
+    <PackageReference Include="WalkingTec.Mvvm.TagHelpers.LayUI" Version="3.0.0-rc8" />
+    <PackageReference Include="WalkingTec.Mvvm.Mvc.Admin" Version="3.0.0-rc8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc4" />
+ </ItemGroup>
+
+  <ItemGroup>
+   <ProjectReference Include="..\IsMatch.Web.Model\IsMatch.Web.Model.csproj" />
+    <ProjectReference Include="..\IsMatch.Web.DataAccess\IsMatch.Web.DataAccess.csproj" />
+    <ProjectReference Include="..\IsMatch.Web.ViewModel\IsMatch.Web.ViewModel.csproj" />
+ </ItemGroup >
+</Project>
+
+
